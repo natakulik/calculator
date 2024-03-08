@@ -17,10 +17,14 @@ def add(num1, num2):
 def sub(num1, num2):
     return num1 - num2
 
+def mul(num1, num2):
+    return num1 * num2
 
 res = 0
 if args.fun == 'add':
     res = add(int(args.num1), int(args.num2))
+elif args.fun == 'mul':
+    res = mul(int(args.num1), int(args.num2))
 else:
     res = sub(int(args.num1), int(args.num2))
 
